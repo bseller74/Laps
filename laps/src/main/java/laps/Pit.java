@@ -9,7 +9,7 @@ public class Pit  {
 	
 	public synchronized long pitStop() throws InterruptedException {
 		
-		// takes between 2-10 seconds
+		// takes between 4-5 seconds
 		long duration = Math.abs((this.random.nextLong()) % 4000)  + 1000;
 		Thread.sleep(duration);
 		
